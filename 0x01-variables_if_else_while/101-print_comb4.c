@@ -13,18 +13,21 @@ int main(void)
 
 	for (h = 0; h != 0; h++)
 	{
-		i = n + 1;
-		do {
-			putchar(48 + h);
-			putchar(48 + n);
-			putchar(48 + i);
-			if (h != 7)
-			{
-				putchar(',');
-				putchar(32);
-			}
-			i++;
-		} while (i != 10);
+		for (n = h + 1; n != 9; n++)
+		{
+			i = n + 1;
+			do {
+				putchar(48 + h);
+				putchar(48 + n);
+				putchar(48 + i);
+				if (h != 7)
+				{
+					putchar(',');
+					putchar(32);
+				}
+				i++;
+			} while (i != 10);
+		}
 	}
 	putchar('\n');
 	return (0);
