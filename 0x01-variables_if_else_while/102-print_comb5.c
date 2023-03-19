@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		for (j = 0; j <= 10; j++)
+		for (j = 0; j <= 9; j++)
 		{
 			for (a = 0; a <= 9; a++)
 			{
@@ -29,7 +29,7 @@ int main(void)
 						putchar(',');
 						putchar(32);
 					}
-					b++;
+					
 				}
 			}
 		}
