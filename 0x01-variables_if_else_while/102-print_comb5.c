@@ -21,13 +21,13 @@ int main(void)
 				{
 					putchar(48 + i);
 					putchar(48 + j);
-					putchar(' ');
+					putchar(32);
 					putchar(48 + a);
 					putchar(48 + b);
 					if (!(j == 8 && i == 9))
 					{
 						putchar(',');
-						putchar(' ');
+						putchar(32);
 					}
 				}
 			}
