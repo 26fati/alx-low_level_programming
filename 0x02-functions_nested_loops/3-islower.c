@@ -6,10 +6,8 @@
  *
  * Return: return 1 for lowecase character. 0 otherwise.
  */
-int _islower(int c)
+int _islower(int i)
 {
-	int i;
-
 	if (i >= 97 && i <= 122)
 	{
 		return (1);
