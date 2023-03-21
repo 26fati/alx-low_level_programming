@@ -1,3 +1,4 @@
+#include"main.h"
 #include<stdio.h>
 /**
  * natural - a function that computes and prints,
