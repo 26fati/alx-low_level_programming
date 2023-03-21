@@ -14,7 +14,7 @@ void natural(void)
 	for (i = 1; i <= 1024; i++)
 	{
 		if ((i % 3 == 0) || (i % 5 == 0))
-			sum++;
+			sum = sum + i;
 
 	}
 	printf("%i\n", sum);
