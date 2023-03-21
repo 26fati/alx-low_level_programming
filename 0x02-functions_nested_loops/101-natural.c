@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * natural - a function that computes and prints,
+ * main - a program that computes and prints,
  * the sum of all the multiples of 3 or 5 below 1024.
  *
  * Return: return 1 (success)..
