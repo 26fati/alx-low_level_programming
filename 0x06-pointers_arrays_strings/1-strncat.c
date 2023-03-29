@@ -12,14 +12,16 @@ char *_strncat(char *dest, char *src, int n)
 {
 	char *pointer = dest;
 	int i = 0;
+	int j = 0;
 
 	while (*(dest + i))
 	{
 		i++;
 	}
-	while (*src)
+	while (*src && j < n))
 	{
-		*(dest + i) = *(src + n);
+		*(dest + i) = *(src);
+		j++;
 		src++;
 		dest++;
 	}
