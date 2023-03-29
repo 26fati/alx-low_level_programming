@@ -9,7 +9,6 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char *pointer = dest;
 	int i = 0;
 	int j = 0;
 
@@ -24,5 +23,5 @@ char *_strcat(char *dest, char *src)
 		j++;
 	}
 	*(dest) = '\0';
-	return (pointer);
+	return (dest);
 }
