@@ -12,7 +12,7 @@ char *_strcat(char *dest, char *src)
 	char *pointer = dest;
 	int i = 0;
 
-	while (i != '\0')
+	while (*(dest + i) != '\0')
 	{
 		i++;
 	}
