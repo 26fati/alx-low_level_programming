@@ -22,7 +22,7 @@ void print_number(int n)
 	number = temp;
 	while (number >= 10)
 	{
-		number / 10;
+		number = number / 10;
 		digit++;
 	}
 	digits = digit + 1;
