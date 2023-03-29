@@ -1,6 +1,11 @@
 #include <stdio.h>
- 
-
+/**
+ * main - entry point
+ *
+ * Description:
+ *
+ * Return: return 0 (success)
+ */
 int main(void)
 {
 	int n;
