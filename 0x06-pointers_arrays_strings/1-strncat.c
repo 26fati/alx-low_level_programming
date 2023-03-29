@@ -10,7 +10,6 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	char *pointer = dest;
 	int i = 0;
 	int j = 0;
 
@@ -25,5 +24,5 @@ char *_strncat(char *dest, char *src, int n)
 		src++;
 		dest++;
 	}
-	return (pointer);
+	return (dest);
 }
