@@ -17,7 +17,7 @@ char *_strcat(char *dest, char *src)
 	{
 		i++;
 	}
-	while (*(src + j) != '\0' && j < 97)
+	while (*(src + j) != '\0' && i < 97)
 	{
 		*(dest + i) = *(src + j);
 		i++;
