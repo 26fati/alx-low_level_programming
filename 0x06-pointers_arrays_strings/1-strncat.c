@@ -17,9 +17,9 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		i++;
 	}
-	while (*(src + i) != '\0' &&  i < 97 && j < n)
+	while (*(src + j) != '\0' &&  i < 97 && j < n)
 	{
-		*(dest + j) = *(src + i);
+		*(dest + i) = *(src + j);
 		i++;
 		j++;
 	}
