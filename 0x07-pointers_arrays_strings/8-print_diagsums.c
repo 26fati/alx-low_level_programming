@@ -11,25 +11,18 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j;
-	int sum1, sum2;
+	int i, j, sumdiag1 = 0, sumdiag2 = 0, step1, step2;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i <= (size - 1); i++)
 	{
-		for (j = 0; j < size; j++)
-		{
-			if (i == j)
-				sum1 = sum1 + (*(a + i) + j);
-
-		}
+		step1 =  (size + 1) * i;
+		sumdiag1 = sumdiag1 + *(a + step1);
 	}
-	for (i = size - 1; i >= 0; i--)
+	for (j = 1; j <= size; j++)
 	{
-		for (j = size - 1; j >= 0; j--)
-		{
-			if (i == j)
-				sum2 = sum2 + (*(a + i) + j);
-		}
+		step2 = (size - 1) * j;
+		sumdiag2 = sumdiag2 + *(a + step2);
 	}
-	printf("%d %d\n", sum1, sum2);
+	printf("%d, %d\n", sumdiag1, sumdiag2);
 }
+
