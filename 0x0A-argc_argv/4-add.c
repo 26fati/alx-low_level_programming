@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<stdlib.h>
 /**
  * main -  a program that adds positive numbers.
  *
@@ -12,10 +13,6 @@ int main(int argc, char *argv[])
 	int result = 0;
 	char *c;
 
-	if (argc == 1)
-	{
-		printf("0\n");
-	}
 	while (--argc)
 	{
 		for (c = argv[argc]; *c; c++)
