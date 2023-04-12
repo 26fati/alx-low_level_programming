@@ -35,7 +35,7 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-	for (; i < ac; i++, numchar++) 
+	for (; i < ac; i++, numchar++)
 	{
 		numchar += _strlen(av[i]);
 	}
