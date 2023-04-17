@@ -1,4 +1,4 @@
-#include "main.h"
+#include "dog.h"
 #include <stdlib>
 /**
  * free_dog - function to free memory
