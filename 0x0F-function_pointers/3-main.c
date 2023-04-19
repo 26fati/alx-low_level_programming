@@ -14,7 +14,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, b;
+	int a, b, c;
 	int (*op)(int, int);
 
 	if (argc != 4)
@@ -30,7 +30,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	printf("%d\n", op(a, b));
+	c= op(a, b);
+	printf("%d\n", c);
 	return (0);
 
 }

@@ -1,6 +1,6 @@
 #include "3-calc.h"
 #include <stdlib.h>
-#include <stdio.h>
+#include <string.h>
 
 /**
  * get_op_func - matches operator from main
@@ -19,9 +19,9 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (op_s[i].op)
+	while (op_s[i].op != NULL)
 	{
-		if (*(op_s[i].op) == *s)
+		if (strcmp(s, op_s[i].op) == 0)
 			return (op_s[i].f);
 		i++;
 	}
