@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	c= op(a, b);
+	c = op(a, b);
 	printf("%d\n", c);
 	return (0);
 
