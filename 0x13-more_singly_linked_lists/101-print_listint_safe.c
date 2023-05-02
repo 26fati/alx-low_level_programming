@@ -48,13 +48,13 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			if (head == list[i])
 			{
-				printf("[%p] %d\n", (void *)head, head->n);
+				printf("-> [%p] %d\n", (void *)head, head->n);
 				free(list);
 				return (count);
 			}
 		}
 		count++;
-		printf("-> [%p] %d\n", (void *)head, head->n);
+		printf("[%p] %d\n", (void *)head, head->n);
 		list = reallocate(list, count, head);
 		head = head->next;
 
