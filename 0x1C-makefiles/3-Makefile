@@ -10,6 +10,6 @@ clean:
 oclean:
 	$(RM) -f $(OBJ)
 fclean:
-	$(RM) -f *~ $(NAME)
+	clean oclean
 re:
 	clean all
